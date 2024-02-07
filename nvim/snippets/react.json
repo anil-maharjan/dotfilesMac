@@ -1,0 +1,25 @@
+{
+  "write a test": {
+    "prefix": "snip-test",
+    "body": [
+      "import React from 'react';",
+      "import { shallow } from 'enzyme';",
+      "import $1 from '../$1'",
+      "",
+      "const props = {};",
+      "",
+      "const basicWrapper = (propsOverwrite) => shallow(<$1 {...props} {...propsOverwrite} />);",
+      "",
+      "describe('$1', () => {",
+      "\tlet wrapper;",
+      "\tbeforeEach(() => {",
+      "\t\twrapper = basicWrapper();",
+      "})",
+      "\tit('renders correctly', () => {",
+      "\t\texpect(wrapper).toMatchSnapshot();",
+      "\t});",
+      "});"
+    ],
+    "description": "Write a test snippet for jest"
+  }
+}
